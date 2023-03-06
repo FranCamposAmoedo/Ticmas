@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+}
+
+#personal-info {
+    background-color: #4E6E81;
+    color: white;
+    width: 80%;
+}
+
+#profile-picture {
+    position: relative;
+    left: 7rem;
+    top: 4rem;
+    width: 80%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#profile-picture.active {
+    position: static;
+    left: 0;
+    top: 0;
+    width: 100vh;
+    overflow-y: scroll;
+}
+
+#modal-container.active {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+#modal-container.active::after {
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 70);
+}
+
+#about-me {
+    margin: 4rem;
+    margin-top: 8rem;
+}
+
+#about-me p {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+#contact {
+    margin: 4rem;
+    margin-top: 10rem;
+}
+
+#contact ul {
+    padding: 0;
+    margin-left: 1rem;
+}
+
+#contact ul a {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+#contact ul a p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+#contact ul a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.8rem;
+}
+
+#experience {
+    margin: 4rem 4rem;
+}
+
+#name-title {
+    margin-bottom: 1rem;
+}
+
+#name-title h1 {
+    margin: 0;
+}
+
+#name-title h2 {
+    font-weight: 300;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+#working-experience ul li {
+    font-size: 1.2rem;
+}
+
+#certifications {
+    margin-bottom: 2rem;
+}
+
+#certifications ul li {
+    font-size: 1.2rem;
+}
+
+#skills ul li div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#skills ul li div p {
+    margin: 0.5rem 0rem 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.progress {
+    height: 20px;
+    margin-left: 3rem;
+    width: 40%;
+    border: 1px solid #F9DBBB;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #F9DBBB;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#bar {
+    background-color: #F9DBBB;
+    width: 2rem;
+}
